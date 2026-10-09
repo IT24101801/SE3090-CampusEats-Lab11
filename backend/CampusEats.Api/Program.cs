@@ -27,7 +27,7 @@ builder.Services.AddCors(opt =>
     opt.AddPolicy(FrontendPolicy, p => p
         .WithOrigins(
             "http://localhost:5173",   // Vite dev server
-            "http://127.0.0.1:5173")
+            "https://se-3090-campus-eats-lab11.vercel.app/")
         .AllowAnyHeader()
         .AllowAnyMethod()));
 
